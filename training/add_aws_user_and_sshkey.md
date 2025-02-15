@@ -55,3 +55,6 @@ Test the connection.
 ```bash
 ssh edward@15.157.97.254
 ```
+
+## Step 4: ssh basic
+Refer to the [SSH Cheat Sheet] (https://blowstack.com/cheat-sheets/ssh-cheat-sheet-common-commands-and-secure-config.pdf)
