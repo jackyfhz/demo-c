@@ -59,7 +59,8 @@ Add and commit the new file:
 ```sh
 git add $(USER)_helloworld.py
 git commit -m "Add hello world script"
-git push origin $(USER)_test
+git push --set-upstream origin $(USER)_test
+or git push --set-upstream origin test1
 ```
 
 ### Step 2.6: Create a Merge/Pull Request
