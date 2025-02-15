@@ -18,7 +18,7 @@ cat /home/$(USER)/.ssh/id_ed25519.pub
 ### Step 1.3: Configure SSH Access
 Create or edit the SSH configuration file to use the generated key:
 ```sh
-cat > ~/.ssh/config <<EOL
+cat >> ~/.ssh/config <<EOL
 Host github.com
     User git
     IdentityFile ~/.ssh/id_ed25519
