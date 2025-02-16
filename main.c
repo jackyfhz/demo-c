@@ -5,17 +5,16 @@
 #include "demo_pointer_int.h"
 #include "demo_pointer_array_int.h"
 #include "demo_pointer_structure.h"
+#include "demo_function_stack.h"
 
 
-void function4() { printf("Function 4 executed.\n"); }
-void function5() { printf("Function 5 executed.\n"); }
 void function6() { printf("Function 6 executed.\n"); }
 void usage() {
     printf("1: demo sizeof 1\n");
     printf("2: demo int pointer 2\n");
     printf("3: demo using pointer to handle Int Array 3\n");
     printf("4: demo using pointer to operate structure 4\n");
-    printf("5: Run function 5\n");
+    printf("5: Demo how is the stack of function working.\n");
     printf("6: Run function 6\n");
     printf("q: Quit the program\n");
     printf("Enter a key (1-6 to run a function, q to quit):\n");
@@ -34,7 +33,7 @@ int main() {
             case '2': demoIntPointer(); break;
             case '3': demoIntArrayPointer(); break;
             case '4': demoStructPointer(); break;
-            case '5': function5(); break;
+            case '5': demo_function_stack(); break;
             case '6': function6(); break;
             case 'q': exit(0);
             default: printf("Invalid input. Please try again.\n");
